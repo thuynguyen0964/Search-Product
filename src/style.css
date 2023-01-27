@@ -91,6 +91,9 @@ body{
         display: grid;
         grid-template-columns: 98%;
     }
+    .filter .item{
+        height: 50px;
+    }
     #list{
         display: grid;
         grid-template-columns: 1fr 1fr;
