@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="filter">
+            <div class="item">
+                <label>Category</label>
+                <!-- Đặt name, value để sau lấy ra bằng Js mà không cần gọi qua DOM -->
+                <select name="category">
+                    <option value="">---</option>
+                    <option value="T-shirt">T-shirt</option>
+                    <option value="Shirt">Shirt</option>
+                    <option value="Polo">Polo</option>
+                </select>
+            </div>
+            <div class="item">
+                <label>Color</label>
+                <select name="color">
+                    <option value="">---</option>
+                    <option value="white">white</option>
+                    <option value="black">black</option>
+                    <option value="grey">grey</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                </select>
+            </div>
+            <div class="item">
+                <label>Name</label>
+                <input name="name" type="text">
+            </div>
+            <div class="item">
+                <label>Min Price</label>
+                <input name="minPrice" type="number">
+            </div>
+            <div class="item">
+                <label>Max Price</label>
+                <input name="maxPrice" type="number">
+            </div>
+            <div class="item submit">
+                <button>Search</button>
+            </div>
+        </form>
+        <div class="countResults">
+            List <b id="count"></b> products
+        </div>
+        <div id="list">
+            
+        </div>
+    </div>
+
+    <script src="./src/main.js"></script>
+</body>
+</html>
